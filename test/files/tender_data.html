@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Электронная торговая площадка iTender УГМК</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="charset" content="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="/Content/Client/images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="/combres.axd/siteCss/1686937435/"/>
+        <link rel="stylesheet" type="text/css" href="/combres.axd/clientCss/-215404699/"/>
+
+        <!--[if lt IE 9]>
+	        <script src="/Content/FogSoft.Common/lib/html5shiv/html5shiv.js"></script>
+			<script src="/Content/FogSoft.Common/lib/html5shiv/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="/combres.axd/jqueryJs/1133487295/"></script>
+        <script>window.FogSoftSignerOptions = {InternalSigner: 'Capidec'};</script>
+
+        <script type="text/javascript">
+var FogSoft = (function(m){m.Signature = m.Signature || {};m.Signature.ValidatorOptions = {"baseApplicationUrl":"/","validateUrl":"/certificate/validate","signatureAlgorithms":""};return m;}(FogSoft || {}))
+</script>
+
+        <script type="text/javascript">
+            var ApplicationInfo = {
+                'ApplicationUrl': 'http://zakupki.ugmk.com/'
+            };
+        </script>
+
+    </head>
+
+	<body data-spy="scroll" data-target=".page-block-navbar-container" data-offset="60">
+		<div id="top" class="top-anchor"></div>
+		<div id="wrapper">
+			<div id="topbar">
+				<div class="navbar navbar-inverse navbar-fixed-top topbar">
+					<div class="navbar-inner">
+						<div class="container">
+
+
+<ul class="nav">
+	<li class="register">
+		<a href='/Registration'>
+			<span class="title">РЕГИСТРАЦИЯ</span>
+			<i class="icn-arrow-right hid-phone"></i>
+			<i class="icon-list vis-phone"></i>
+		</a>
+	</li>
+</ul>
+							<div class="pull-right">
+
+
+
+<!--[if lt IE 10]>
+    <script src="/Content/FogSoft.Common/placeholder.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Content/FogSoft.Common/placeholder.css"></link>
+<![endif]-->
+
+	<ul class="nav navbar-nav prominent-nav">
+		<li>
+			<a href="#" id="showLogin" class="closed">Войти</a>
+		</li>
+	</ul>
+	<div id="loginForm" class="login-block" style='display: none;'>
+<form action="/Account/Login" id="f9862216-ecd0-481c-80a7-79c5fbe18014" method="POST"><input name="__RequestVerificationToken" type="hidden" value="Sa3AjEglrCM5Mh7S9tDB/7asowt1DJo1Qa+EK60gPonyuvI2o73JAoyncwiQwdncMhKxayb6xqfVcJjPz83aPEbsQTwTyrUE2lrTBKSRmoRsz+3Jury4kcIhymksJ4ogjNpzGCTTLJYD2/D4pxyhDaAGUPT+uzwp8tdGY0fukKI=" /><div class="control-group row-fluid  " placeholder="Логин"><div class=" "><input id="UserName" name="UserName" type="text" value="" /><span class="field-validation-valid help-inline" data-valmsg-for="UserName" data-valmsg-replace="true"></span></div></div><div class="control-group row-fluid  " placeholder="Пароль"><div class=" "><input id="Password" name="Password" type="password" /><span class="field-validation-valid help-inline" data-valmsg-for="Password" data-valmsg-replace="true"></span></div></div><button class="btn " type="submit">Войти</button>			<div class="forget">
+				<a href="/Account/ResetPassword">Забыли пароль?</a>
+			</div>
+</form>	</div>
+	<script type="text/javascript">
+		$(function () {
+			var $form = $('#loginForm');
+			var oauthBlock = $form.find('.oauth-block');
+			var width = $form.find('form').getHiddenDimensions(true).outerWidth
+					+ (oauthBlock && oauthBlock.getHiddenDimensions(true).outerWidth);
+			$form.css({ width: width });
+
+			var $notificationArea = $('.notification-area');
+			$('#showLogin').click(function () {
+				if ($(this).hasClass('opened')) {
+					closeLogin();
+				} else {
+					$notificationArea.notificationArea('close');
+					$form.fadeIn();
+					$form.find('[name="UserName"]').focus();
+					$(this).removeClass('closed').addClass('opened');
+					$(document).on('click.loginForm.data-api', closeLogin);
+				}
+
+				return false;
+			});
+
+			var closeLogin = function (e) {
+				var target = e && e.target;
+
+				if (!$form.is(target) && !$(target).parents().is($form)) {
+					$form.fadeOut();
+					$('#showLogin').removeClass('opened').addClass('closed');
+					$(document).off('click.loginForm.data-api');
+				}
+			};
+		});
+	</script>
+
+
+
+
+
+								<ul class="nav prominent-nav notification-area-trigger">
+									<li>
+										<a href="#"><i class="icon-white icon-triangle-down" data-icon-show="icon-triangle-down" data-icon-hide="icon-triangle-up"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="notification-area container"></div>
+			<div id="page-header" class="page-top">
+				<div class="container">
+					<div class="row-fluid">
+						<div class="span7">
+							<a class="logo" href='/'></a>
+							<div class="logo-title">Электронная торговая площадка iTender УГМК</div>
+						</div>
+						<div class="span5">
+
+
+
+<div class="clock clearfix">
+	<div class="timeicon"></div>
+	<div class="date-part">13 апреля 2018</div>
+	<div class="time-part" title="На момент последнего обновления" rel="tooltip" data-placement="bottom">16:35</div>
+</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="topmenu">
+				<div class="navbar navbar-static-top topmenu">
+					<div class="navbar-inner">
+						<div class="container">
+							<a class="btn btn-navbar" data-toggle="collapse" data-target="#topmenu .nav-collapse">
+								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</a>
+							<div class="nav-collapse collapse">
+								<ul class="nav"><li class=""><a href="/Tenders">Торги</a></li><li class=""><a href="/Regulations">Документы</a></li><li class=""><a href="/Faq">Вопросы-ответы</a></li><li class=""><a href="/Operator">Контакты</a></li></ul>
+							</div>
+						</div>
+					</div></div>
+			</div>
+
+			<div class="breadcrumb-container"><div class="container"><ul class="breadcrumb"><li class="return-link"><a href="#" onclick="history.back();return false;">Вернуться</a></li><li class="icon-back return-link"></li><li><a href="/">Главная</a></li><li class="icon-arrow-bold-right"></li><li><a href="/">Торги</a></li><li class="icon-arrow-bold-right"></li><li class="active">Поставка, шеф-монтаж, инструктаж, консультация персонала заказчика и пуско-наладочные работы турбоагрегата типа &quot;ПР&quot; 5,5-6,9МВт, в соответствии с техническим заданием, по объекту &quot;ТЭЦ. Замена турбоагрегата №4 на турбоагрегат типа &quot;ПР&quot; с производственным отбором. Техническое перевооружение. Арх. №00.245&quot;</li><li></li></ul></div></div>
+			<div class="container panel-container">
+				<div class="row-fluid page-content">
+					<div class="span11 main-page-content-column">
+						<div class="notification-container"></div>
+						<div id="Информация_о_торгах">
+							<h2>Информация о торгах</h2>
+
+
+
+<div class="well"><div class="form-horizontal" id="61270a0d-099b-49ff-a0ba-1eeb88f71e60"><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="TenderNumber">Номер</label><div class="controls span8"><div class="control-readonly">T-000001943</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Title">Наименование</label><div class="controls span8"><div class="control-readonly">Поставка, шеф-монтаж, инструктаж, консультация персонала заказчика и пуско-наладочные работы турбоагрегата типа "ПР" 5,5-6,9МВт, в соответствии с техническим заданием, по объекту "ТЭЦ. Замена турбоагрегата №4 на турбоагрегат типа "ПР" с производственным отбором. Техническое перевооружение. Арх. №00.245"</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="OrganizerInfo">Организатор</label><div class="controls span8"><div class="control-readonly"><a href="/Companies/Details/3cc1550b-6371-44de-abdf-12300a308c8b">Общество с ограниченной ответственностью "УГМК-Холдинг"</a></div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="ConfigName">Способ проведения закупки</label><div class="controls span8"><div class="control-readonly">Аукцион</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="StatusName">Статус</label><div class="controls span8"><div class="control-readonly">Опубликован</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="TradingAddress">Адрес электронной площадки в сети &#171;Интернет&#187;</label><div class="controls span8"><div class="control-readonly">http://zakupki.ugmk.com/</div></div></div><hr/><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="ContractSigningNotes">Срок заключения договора</label><div class="controls span8"><div class="control-readonly">*</div></div></div></div></div>
+						</div>
+						<section id="Лоты"><div class="ui-block block-collapse" data-auto-load="true" data-remote-content="true" data-target=".ui-block-content" data-url="/Tenders/Lots/2856"><div class="ui-block-header"><button class="btn btn-link btn-type-collapse" data-fold-phrase="свернуть" data-target=".ui-block-content" data-unfold-phrase="развернуть" type="button"><span>свернуть</span> <i class="icon-triangle-up" data-fold-class="icon-triangle-up" data-unfold-class="icon-triangle-down"></i></button><h3><i class="icon-large icon-lots"></i> Лоты</h3></div><div class="ui-block-content well"></div></div></section><section id="Контактные_лица"><div class="ui-block block-collapse" data-auto-load="true" data-remote-content="true" data-target=".ui-block-content" data-url="/Tenders/ViewContactPersons?tenderId=2856"><div class="ui-block-header"><button class="btn btn-link btn-type-collapse" data-fold-phrase="свернуть" data-target=".ui-block-content" data-unfold-phrase="развернуть" type="button"><span>свернуть</span> <i class="icon-triangle-up" data-fold-class="icon-triangle-up" data-unfold-class="icon-triangle-down"></i></button><h3><i class="icon-large icon-team"></i> Контактные лица</h3></div><div class="ui-block-content well"></div></div></section><section id="Электронная_подпись"><div class="ui-block block-collapse" data-auto-load="true" data-remote-content="true" data-target=".ui-block-content" data-url="/Signature/ViewSignatureList?entityTypeCode=Tender&amp;entityUid=dfb80b4c-79f1-4b8d-9087-84a105b65856"><div class="ui-block-header"><button class="btn btn-link btn-type-collapse" data-fold-phrase="свернуть" data-target=".ui-block-content" data-unfold-phrase="развернуть" type="button"><span>свернуть</span> <i class="icon-triangle-up" data-fold-class="icon-triangle-up" data-unfold-class="icon-triangle-down"></i></button><h3><i class="icon-large icon-signatures-list"></i> Электронная подпись</h3></div><div class="ui-block-content well"></div></div></section><section id="Документы"><div class="ui-block block-collapse" data-auto-load="true" data-remote-content="true" data-target=".ui-block-content" data-url="/Documents/List?entityTypeCode=Tender&amp;entityUid=dfb80b4c-79f1-4b8d-9087-84a105b65856"><div class="ui-block-header"><button class="btn btn-link btn-type-collapse" data-fold-phrase="свернуть" data-target=".ui-block-content" data-unfold-phrase="развернуть" type="button"><span>свернуть</span> <i class="icon-triangle-up" data-fold-class="icon-triangle-up" data-unfold-class="icon-triangle-down"></i></button><h3><i class="icon-large icon-documents"></i> Документы</h3></div><div class="ui-block-content well"></div></div></section>
+
+					</div>
+						<div class="span1 page-block-navbar-container">
+							<ul class="nav page-block-navbar"><li><a href="#Информация_о_торгах" title="Информация о торгах" data-toggle="popover"><i class="icon-tender"></i></a></li><li><a href="#Лоты" title="Лоты" data-toggle="popover"><i class="icon-lots"></i></a></li><li><a href="#Контактные_лица" title="Контактные лица" data-toggle="popover"><i class="icon-team"></i></a></li><li><a href="#Электронная_подпись" title="Электронная подпись" data-toggle="popover"><i class="icon-signatures-list"></i></a></li><li><a href="#Документы" title="Документы" data-toggle="popover"><i class="icon-documents"></i></a></li></ul>
+							<div class="page-top-nav affix">
+								<a href="#top" rel="tooltip" title="Наверх" data-placement="left"><span class="caret"></span></a>
+							</div>
+						</div>
+				</div>
+			</div>
+			 <div id="footer" class="footer">
+
+
+<div class="copyright">
+	<div class="contacts container">
+
+	</div>
+	<div class="container">
+		<a href="/" class="footer-logo"></a>
+		<div class="pull-right">
+			<a href="http://fogsoft.ru/solutions/procurement_automation/procurement_automation.aspx" target="_blank" rel=nofollow class="site-developer">Разработано на платформе iTender компании<br/>Fogsoft (ФогСофт)</a>
+		</div>
+	</div>
+</div>
+
+		    </div>
+		</div>
+<form class="hide" data-ajax-post="1" id="b7afd40f-4751-41b7-901d-90f32a8c6107" method="POST"><input name="__RequestVerificationToken" type="hidden" value="6/AHFzXAD7PahG+qUAbBEDh82E5Y2+hd5L7BkmtPhD6OWUVl+RipyU+bPHOoJ7+EJho+9wUQ4amZAWyZCXzlEvrK+r+ZMGHNRYbuq3M2+fWvLEkiOrJ02o+YA8w4bUglmzb18f4E9TQzXN42WwbS/lmrHBX1Uj2WVaTjVsnbG08=" /></form>
+
+
+<script id="fs-datagrid-status" type="text/x-jquery-tmpl">
+	Всего записей: <span class="count">${$item.common.formatNumber(totalCount, null, "Number")}</span>
+</script>
+<script id="fs-datagrid-status-and-select" type="text/x-jquery-tmpl">
+	<span class="info">Всего записей: <span class="count">${$item.common.formatNumber(totalCount, null, "Number")}</span></span>
+	<span class="info">Выделено: <span class="count">${$item.common.formatNumber(selectedCount, null, "Number")}</span></span>
+</script>
+<script id="fs-datagrid-select-limit-exceeded-message" type="text/x-jquery-tmpl">Функция &#171;Выбрать все&#187; имеет ограничение на ${limit} записей. Если возможно, уточните Ваш запрос.</script>
+<script id="fs-datagrid-tenderLotNumber" type="text/x-jquery-tmpl">
+	{{if TenderNumber}}${TenderNumber}{{/if}}{{if TenderLotNumber}}/${$item.common.formatNumber(TenderLotNumber, "0#")}{{/if}}
+</script>
+
+
+
+<script id="fs-tender-initialprice-tmpl" type="text/x-jquery-tmpl">
+	{{if InitialPrice}}
+		${$item.common.formatNumber(InitialPrice, null, "Money")}
+	{{else}}
+		Не определена
+	{{/if}}
+</script>
+		<script type="text/javascript" src="/combres.axd/siteJs/563858504/"></script>
+		<script type="text/javascript" src="/combres.axd/siteJs-ru/51365394/"></script>
+		<script type="text/javascript" src="/combres.axd/clientJs/528/"></script>
+
+
+	</body>
+</html>

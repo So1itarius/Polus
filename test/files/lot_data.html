@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Электронная торговая площадка iTender УГМК</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="charset" content="utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="/Content/Client/images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="/combres.axd/siteCss/1686937435/"/>
+    <link rel="stylesheet" type="text/css" href="/combres.axd/clientCss/-215404699/"/>
+
+    <!--[if lt IE 9]>
+    <script src="/Content/FogSoft.Common/lib/html5shiv/html5shiv.js"></script>
+    <script src="/Content/FogSoft.Common/lib/html5shiv/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/combres.axd/jqueryJs/1133487295/"></script>
+    <script>window.FogSoftSignerOptions = {InternalSigner: 'Capidec'};</script>
+
+    <script type="text/javascript">
+var FogSoft = (function(m){m.Signature = m.Signature || {};m.Signature.ValidatorOptions = {"baseApplicationUrl":"/","validateUrl":"/certificate/validate","signatureAlgorithms":""};return m;}(FogSoft || {}))
+
+    </script>
+
+    <script type="text/javascript">
+            var ApplicationInfo = {
+                'ApplicationUrl': 'http://zakupki.ugmk.com/'
+            };
+
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".page-block-navbar-container" data-offset="60">
+<div id="top" class="top-anchor"></div>
+<div id="wrapper">
+    <div id="topbar">
+        <div class="navbar navbar-inverse navbar-fixed-top topbar">
+            <div class="navbar-inner">
+                <div class="container">
+
+
+                    <ul class="nav">
+                        <li class="register">
+                            <a href='/Registration'>
+                                <span class="title">РЕГИСТРАЦИЯ</span>
+                                <i class="icn-arrow-right hid-phone"></i>
+                                <i class="icon-list vis-phone"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="pull-right">
+
+
+                        <!--[if lt IE 10]>
+                        <script src="/Content/FogSoft.Common/placeholder.js"></script>
+                        <link rel="stylesheet" type="text/css" href="/Content/FogSoft.Common/placeholder.css"></link>
+                        <![endif]-->
+
+                        <ul class="nav navbar-nav prominent-nav">
+                            <li>
+                                <a href="#" id="showLogin" class="closed">Войти</a>
+                            </li>
+                        </ul>
+                        <div id="loginForm" class="login-block" style='display: none;'>
+                            <form action="/Account/Login" id="55c8dfca-4a04-45c9-94d1-d71ec5558d8f" method="POST"><input
+                                    name="__RequestVerificationToken" type="hidden"
+                                    value="nTl46YIqyVxOhW1KqPny2wnt1wUNSiosv8s2jntXbtuQ88x1+ympMeos+MagD1mO1D9EX2eSq/ZO8XJp5iJyZX94I10U/fMaHJEVLJnCpz6mPdFumVNg++knGBzuhiAlIvw3ChaSovJTRbYXkgh4t7KGKKdqIn0j+5xrTcv0s8c="/>
+                                <div class="control-group row-fluid  " placeholder="Логин">
+                                    <div class=" "><input id="UserName" name="UserName" type="text" value=""/><span
+                                            class="field-validation-valid help-inline" data-valmsg-for="UserName"
+                                            data-valmsg-replace="true"></span></div>
+                                </div>
+                                <div class="control-group row-fluid  " placeholder="Пароль">
+                                    <div class=" "><input id="Password" name="Password" type="password"/><span
+                                            class="field-validation-valid help-inline" data-valmsg-for="Password"
+                                            data-valmsg-replace="true"></span></div>
+                                </div>
+                                <button class="btn " type="submit">Войти</button>
+                                <div class="forget">
+                                    <a href="/Account/ResetPassword">Забыли пароль?</a>
+                                </div>
+                            </form>
+                        </div>
+                        <script type="text/javascript">
+		$(function () {
+			var $form = $('#loginForm');
+			var oauthBlock = $form.find('.oauth-block');
+			var width = $form.find('form').getHiddenDimensions(true).outerWidth
+					+ (oauthBlock && oauthBlock.getHiddenDimensions(true).outerWidth);
+			$form.css({ width: width });
+
+			var $notificationArea = $('.notification-area');
+			$('#showLogin').click(function () {
+				if ($(this).hasClass('opened')) {
+					closeLogin();
+				} else {
+					$notificationArea.notificationArea('close');
+					$form.fadeIn();
+					$form.find('[name="UserName"]').focus();
+					$(this).removeClass('closed').addClass('opened');
+					$(document).on('click.loginForm.data-api', closeLogin);
+				}
+
+				return false;
+			});
+
+			var closeLogin = function (e) {
+				var target = e && e.target;
+
+				if (!$form.is(target) && !$(target).parents().is($form)) {
+					$form.fadeOut();
+					$('#showLogin').removeClass('opened').addClass('closed');
+					$(document).off('click.loginForm.data-api');
+				}
+			};
+		});
+
+                        </script>
+
+
+                        <ul class="nav prominent-nav notification-area-trigger">
+                            <li>
+                                <a href="#"><i class="icon-white icon-triangle-down" data-icon-show="icon-triangle-down"
+                                               data-icon-hide="icon-triangle-up"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notification-area container"></div>
+    <div id="page-header" class="page-top">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span7">
+                    <a class="logo" href='/'></a>
+                    <div class="logo-title">Электронная торговая площадка iTender УГМК</div>
+                </div>
+                <div class="span5">
+
+
+                    <div class="clock clearfix">
+                        <div class="timeicon"></div>
+                        <div class="date-part">13 апреля 2018</div>
+                        <div class="time-part" title="На момент последнего обновления" rel="tooltip"
+                             data-placement="bottom">18:35
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="topmenu">
+        <div class="navbar navbar-static-top topmenu">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target="#topmenu .nav-collapse">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class=""><a href="/Tenders">Торги</a></li>
+                            <li class=""><a href="/Regulations">Документы</a></li>
+                            <li class=""><a href="/Faq">Вопросы-ответы</a></li>
+                            <li class=""><a href="/Operator">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb-container">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="return-link"><a href="#" onclick="history.back();return false;">Вернуться</a></li>
+                <li class="icon-back return-link"></li>
+                <li><a href="/">Главная</a></li>
+                <li class="icon-arrow-bold-right"></li>
+                <li><a href="/">Торги</a></li>
+                <li class="icon-arrow-bold-right"></li>
+                <li><a href="/Tender/T-000001943">Поставка, шеф-монтаж, инструктаж, консультация персонала заказчика и
+                    пуско-наладочные работы турбоагрегата типа &quot;ПР&quot; 5,5-6,9МВт, в соответствии с техническим
+                    заданием, по объекту &quot;ТЭЦ. Замена турбоагрегата №4 на турбоагрегат типа &quot;ПР&quot; с
+                    производственным отбором. Техническое перевооружение. Арх. №00.245&quot;</a></li>
+                <li class="icon-arrow-bold-right"></li>
+                <li><a href="/Tenders/Lot?tenderNumber=T-000001943&amp;lotNumber=1&amp;noticeNumber=1&amp;version=1">Поставка,
+                    шеф-монтаж, инструктаж, консультация персонала заказчика и пуско-наладочные работы турбоагрегата
+                    типа &quot;ПР&quot; 5,5-6,9МВт, в соответствии с техническим заданием, по объекту &quot;ТЭЦ. Замена
+                    турбоагрегата №4 на турбоагрегат типа &quot;ПР&quot; с производственным отбором. Техническое
+                    перевооружение. Арх. №00.245&quot;</a></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container panel-container">
+        <div class="">
+            <div class="">
+                <div class="notification-container"></div>
+                <div id="Информация_о_лоте">
+                    <h2>Информация о лоте</h2>
+
+
+                    <div class="row-fluid">
+                        <ul class="significant-info has-4-blocks status-request-receiving">
+                            <li class="long">
+                                <a class="info-cell with-icon"
+                                   href="/Tenders/Lot?tenderNumber=T-000001943&amp;lotNumber=1&amp;noticeNumber=1&amp;version=1"
+                                   rel="tooltip"
+                                   title="Поставка, шеф-монтаж, инструктаж, консультация персонала заказчика и пуско-наладочные работы турбоагрегата типа &quot;ПР&quot; 5,5-6,9МВт, в соответствии с техническим заданием, по объекту &quot;ТЭЦ. Замена турбоагрегата №4 на турбоагрегат типа &quot;ПР&quot; с производственным отбором. Техническое перевооружение. Арх. №00.245&quot; - Аукцион">
+                                    <div class="icn-placeholder"><i class="icon-tender"></i></div>
+                                    <div class="info-property">Способ проведения</div>
+                                    <div class="info-value">Аукцион</div>
+                                </a>
+                            </li>
+                            <li class="short">
+                                <div class="info-cell">
+                                    <div class="info-property">Статус</div>
+                                    <div class="info-value">Прием заявок</div>
+                                </div>
+                            </li>
+                            <li class="highlight">
+                                <div class="info-cell">
+                                    <div class="info-property">Начальная цена (без НДС)</div>
+                                    <div class="info-value">118&#160;973&#160;237,00 ₽</div>
+                                </div>
+                            </li>
+                            <li class="last-child">
+                                <div class="info-cell">
+                                    <div class="info-property">Дата и время начала торгов</div>
+                                    <div class="info-value">16.04.2018 12:15</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <script>
+	function setEqualHeight(columns) {
+		var tallestcolumn = 0;
+		columns.each(function () {
+			var currentHeight = $(this).height();
+			if (currentHeight > tallestcolumn) {
+				tallestcolumn = currentHeight;
+			}
+		});
+		columns.height(tallestcolumn);
+	}
+
+	$(".significant-info").ready(function () {
+		setEqualHeight($(".significant-info > li > .info-cell"));
+	});
+
+                    </script>
+
+
+                    <div class="well">
+                        <div class="form-horizontal" id="5a3268ab-5e58-411b-8148-ac3e5d704450">
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="Title">Лот</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">Поставка, шеф-монтаж, инструктаж, консультация
+                                        персонала заказчика и пуско-наладочные работы турбоагрегата типа "ПР"
+                                        5,5-6,9МВт, в соответствии с техническим заданием, по объекту "ТЭЦ. Замена
+                                        турбоагрегата №4 на турбоагрегат типа "ПР" с производственным отбором.
+                                        Техническое перевооружение. Арх. №00.245"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="LotNumberFull">Номер лота</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">T-000001943/1</div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="OrganizerName">Организатор</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly"><a
+                                            href="/Companies/Details/3cc1550b-6371-44de-abdf-12300a308c8b">Общество с
+                                        ограниченной ответственностью "УГМК-Холдинг"</a></div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="NoticeConfigName">Способ
+                                проведения</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">Аукцион</div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="LotStatusName">Статус</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">Прием заявок</div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="ParticipationForm">Форма
+                                проведения</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">Закрытая</div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="ParticipationRequestForm">Форма подачи
+                                предложений</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">Открытая</div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="InitialPrice">Начальная цена (без
+                                НДС)</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">118 973 237,00 ₽</div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="PriceStep">Шаг аукциона</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">59 486,62 ₽ (0,05%)</div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="RequestReceivingBeginDate">Дата начала
+                                приема заявок</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">13.04.2018 13:40</div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="RequestReceivingEndDate">Дата окончания
+                                приема заявок</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">16.04.2018 12:00</div>
+                                </div>
+                            </div>
+                            <div class="control-group row-fluid  "><label class="control-label span4 with-colon"
+                                                                          for="BidReceivingBeginDate">Дата и время
+                                начала торгов</label>
+                                <div class="controls span8">
+                                    <div class="control-readonly">16.04.2018 12:15</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="Документы">
+                    <div class="ui-block block-collapse" data-auto-load="true" data-remote-content="true"
+                         data-target=".ui-block-content"
+                         data-url="/Documents/List?entityTypeCode=TenderLot&amp;entityUid=8d4e1c71-8552-49df-a52e-05867fc5e62e">
+                        <div class="ui-block-header">
+                            <button class="btn btn-link btn-type-collapse" data-fold-phrase="свернуть"
+                                    data-target=".ui-block-content" data-unfold-phrase="развернуть" type="button"><span>свернуть</span>
+                                <i class="icon-triangle-up" data-fold-class="icon-triangle-up"
+                                   data-unfold-class="icon-triangle-down"></i></button>
+                            <h3><i class="icon-large icon-documents"></i> Документы</h3></div>
+                        <div class="ui-block-content well"></div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+
+
+        <div class="copyright">
+            <div class="contacts container">
+
+            </div>
+            <div class="container">
+                <a href="/" class="footer-logo"></a>
+                <div class="pull-right">
+                    <a href="http://fogsoft.ru/solutions/procurement_automation/procurement_automation.aspx"
+                       target="_blank" rel=nofollow class="site-developer">Разработано на платформе iTender
+                        компании<br/>Fogsoft (ФогСофт)</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<form class="hide" data-ajax-post="1" id="b98cf031-fe41-4861-8f57-4048c47dc6ff" method="POST"><input
+        name="__RequestVerificationToken" type="hidden"
+        value="3oABGiuB9FkyVg6iiI1jtVWyAigOeTaopA01veS/CobFBols8uj8qBEZK259yQTkdKYN6P0ONNFYpst/V61rMfDdN0puIGyj3udWz1IiVZUn/MTBmNcTO1jnaw3iCM9kfuO0dQSgEXPdPjgcqKPca+8hQHA0Q7ah39+SewAndJU="/>
+</form>
+
+
+<script id="fs-datagrid-status" type="text/x-jquery-tmpl">
+	Всего записей: <span class="count">${$item.common.formatNumber(totalCount, null, "Number")}</span>
+
+</script>
+<script id="fs-datagrid-status-and-select" type="text/x-jquery-tmpl">
+	<span class="info">Всего записей: <span class="count">${$item.common.formatNumber(totalCount, null, "Number")}</span></span>
+	<span class="info">Выделено: <span class="count">${$item.common.formatNumber(selectedCount, null, "Number")}</span></span>
+
+</script>
+<script id="fs-datagrid-select-limit-exceeded-message" type="text/x-jquery-tmpl">
+    Функция &#171;Выбрать все&#187; имеет ограничение на ${limit} записей. Если возможно, уточните Ваш запрос.
+</script>
+<script id="fs-datagrid-tenderLotNumber" type="text/x-jquery-tmpl">
+	{{if TenderNumber}}${TenderNumber}{{/if}}{{if TenderLotNumber}}/${$item.common.formatNumber(TenderLotNumber, "0#")}{{/if}}
+
+</script>
+
+
+<script id="fs-tender-initialprice-tmpl" type="text/x-jquery-tmpl">
+	{{if InitialPrice}}
+		${$item.common.formatNumber(InitialPrice, null, "Money")}
+	{{else}}
+		Не определена
+	{{/if}}
+
+</script>
+<script type="text/javascript" src="/combres.axd/siteJs/563858504/"></script>
+<script type="text/javascript" src="/combres.axd/siteJs-ru/51365394/"></script>
+<script type="text/javascript" src="/combres.axd/clientJs/528/"></script>
+
+
+</body>
+</html>

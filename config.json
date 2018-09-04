@@ -1,0 +1,21 @@
+{
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "test",
+    "collection": "collectionTest10"
+  },
+  "rabbitmq": {
+    "host": "localhost",
+    "port": 5672,
+    "username": "guest",
+    "password": "guest",
+    "queue": "test3"
+  },
+  "proxy": {
+    "enabled": true,
+    "host": "",
+    "login": "",
+    "password": ""
+  }
+}

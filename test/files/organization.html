@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Электронная торговая площадка iTender УГМК</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="charset" content="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="/Content/Client/images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="/combres.axd/siteCss/1686937435/"/>
+        <link rel="stylesheet" type="text/css" href="/combres.axd/clientCss/-215404699/"/>
+
+        <!--[if lt IE 9]>
+	        <script src="/Content/FogSoft.Common/lib/html5shiv/html5shiv.js"></script>
+			<script src="/Content/FogSoft.Common/lib/html5shiv/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="/combres.axd/jqueryJs/1133487295/"></script>
+        <script>window.FogSoftSignerOptions = {InternalSigner: 'Capidec'};</script>
+
+        <script type="text/javascript">
+var FogSoft = (function(m){m.Signature = m.Signature || {};m.Signature.ValidatorOptions = {"baseApplicationUrl":"/","validateUrl":"/certificate/validate","signatureAlgorithms":""};return m;}(FogSoft || {}))
+</script>
+
+        <script type="text/javascript">
+            var ApplicationInfo = {
+                'ApplicationUrl': 'http://zakupki.ugmk.com/'
+            };
+        </script>
+
+    </head>
+
+	<body data-spy="scroll" data-target=".page-block-navbar-container" data-offset="60">
+		<div id="top" class="top-anchor"></div>
+		<div id="wrapper">
+			<div id="topbar">
+				<div class="navbar navbar-inverse navbar-fixed-top topbar">
+					<div class="navbar-inner">
+						<div class="container">
+
+
+<ul class="nav">
+	<li class="register">
+		<a href='/Registration'>
+			<span class="title">РЕГИСТРАЦИЯ</span>
+			<i class="icn-arrow-right hid-phone"></i>
+			<i class="icon-list vis-phone"></i>
+		</a>
+	</li>
+</ul>
+							<div class="pull-right">
+
+
+
+<!--[if lt IE 10]>
+    <script src="/Content/FogSoft.Common/placeholder.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Content/FogSoft.Common/placeholder.css"></link>
+<![endif]-->
+
+	<ul class="nav navbar-nav prominent-nav">
+		<li>
+			<a href="#" id="showLogin" class="closed">Войти</a>
+		</li>
+	</ul>
+	<div id="loginForm" class="login-block" style='display: none;'>
+<form action="/Account/Login" id="d25f0a60-ad46-43e6-8a7a-529416ccf4b2" method="POST"><input name="__RequestVerificationToken" type="hidden" value="k/3sxHFF//oOKP+Y97362HQrXrPEF0Eo04XO2pBaLDggjN34gv3OrB6ByMnq1nmsiylUNJSD272As8LyrB3Su3fHafNOWlcxeFk8u9BjEIddzdC01kW49VgVHCa98GlakGQ4hne3Wx/bRFZ/vPfMTAG1hqSD97GPSwgYnHJLa0I=" /><div class="control-group row-fluid  " placeholder="Логин"><div class=" "><input id="UserName" name="UserName" type="text" value="" /><span class="field-validation-valid help-inline" data-valmsg-for="UserName" data-valmsg-replace="true"></span></div></div><div class="control-group row-fluid  " placeholder="Пароль"><div class=" "><input id="Password" name="Password" type="password" /><span class="field-validation-valid help-inline" data-valmsg-for="Password" data-valmsg-replace="true"></span></div></div><button class="btn " type="submit">Войти</button>			<div class="forget">
+				<a href="/Account/ResetPassword">Забыли пароль?</a>
+			</div>
+</form>	</div>
+	<script type="text/javascript">
+		$(function () {
+			var $form = $('#loginForm');
+			var oauthBlock = $form.find('.oauth-block');
+			var width = $form.find('form').getHiddenDimensions(true).outerWidth
+					+ (oauthBlock && oauthBlock.getHiddenDimensions(true).outerWidth);
+			$form.css({ width: width });
+
+			var $notificationArea = $('.notification-area');
+			$('#showLogin').click(function () {
+				if ($(this).hasClass('opened')) {
+					closeLogin();
+				} else {
+					$notificationArea.notificationArea('close');
+					$form.fadeIn();
+					$form.find('[name="UserName"]').focus();
+					$(this).removeClass('closed').addClass('opened');
+					$(document).on('click.loginForm.data-api', closeLogin);
+				}
+
+				return false;
+			});
+
+			var closeLogin = function (e) {
+				var target = e && e.target;
+
+				if (!$form.is(target) && !$(target).parents().is($form)) {
+					$form.fadeOut();
+					$('#showLogin').removeClass('opened').addClass('closed');
+					$(document).off('click.loginForm.data-api');
+				}
+			};
+		});
+	</script>
+
+
+
+
+
+								<ul class="nav prominent-nav notification-area-trigger">
+									<li>
+										<a href="#"><i class="icon-white icon-triangle-down" data-icon-show="icon-triangle-down" data-icon-hide="icon-triangle-up"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="notification-area container"></div>
+			<div id="page-header" class="page-top">
+				<div class="container">
+					<div class="row-fluid">
+						<div class="span7">
+							<a class="logo" href='/'></a>
+							<div class="logo-title">Электронная торговая площадка iTender УГМК</div>
+						</div>
+						<div class="span5">
+
+
+
+<div class="clock clearfix">
+	<div class="timeicon"></div>
+	<div class="date-part">13 апреля 2018</div>
+	<div class="time-part" title="На момент последнего обновления" rel="tooltip" data-placement="bottom">13:39</div>
+</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="topmenu">
+				<div class="navbar navbar-static-top topmenu">
+					<div class="navbar-inner">
+						<div class="container">
+							<a class="btn btn-navbar" data-toggle="collapse" data-target="#topmenu .nav-collapse">
+								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</a>
+							<div class="nav-collapse collapse">
+								<ul class="nav"><li class=""><a href="/Tenders">Торги</a></li><li class=""><a href="/Regulations">Документы</a></li><li class=""><a href="/Faq">Вопросы-ответы</a></li><li class=""><a href="/Operator">Контакты</a></li></ul>
+							</div>
+						</div>
+					</div></div>
+			</div>
+
+			<div class="breadcrumb-container"><div class="container"><ul class="breadcrumb"><li class="return-link"><a href="#" onclick="history.back();return false;">Вернуться</a></li><li class="icon-back return-link"></li><li><a href="/">Главная</a></li><li class="icon-arrow-bold-right"></li><li class="active">ООО &quot;УГМК-Холдинг&quot;</li><li></li></ul></div></div>
+			<div class="container panel-container">
+				<div class="">
+					<div class="">
+						<div class="notification-container"></div>
+						<div id="Контрагент">
+							<h2>Контрагент</h2>
+
+
+
+<div class="well"><div class="form-horizontal" id="9b870131-84eb-4c57-9ed7-97c437b93037"><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="FullName">Полное наименование</label><div class="controls span8"><div class="control-readonly">Общество с ограниченной ответственностью "УГМК-Холдинг"</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="ShortName">Краткое наименование</label><div class="controls span8"><div class="control-readonly">ООО "УГМК-Холдинг"</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Notes">Информация</label><div class="controls span8"><div class="control-readonly"></div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="ChiefFullName">Руководитель</label><div class="controls span8"><div class="control-readonly"></div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Vatin">ИНН</label><div class="controls span8"><div class="control-readonly">6606015817</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Kpp">КПП</label><div class="controls span8"><div class="control-readonly">660601001</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Ogrn">ОГРН</label><div class="controls span8"><div class="control-readonly">1026600727020</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="LegalAddress">Юридический адрес</label><div class="controls span8"><div class="control-readonly">624091, Россия, Свердловская область, г. Верхняя Пышма, ул. Ленина, д. 1</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="PostalAddress">Почтовый адрес</label><div class="controls span8"><div class="control-readonly">624091, Россия, Свердловская область, г. Верхняя Пышма, ул. Ленина, д. 1</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Phone">Телефон</label><div class="controls span8"><div class="control-readonly">(343)283-00-75; По вопросам с электронной цифровой подписью (ЭЦП) звонить по тел. (34368)96291</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="MobilePhone">Мобильный телефон</label><div class="controls span8"><div class="control-readonly"></div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Fax">Факс</label><div class="controls span8"><div class="control-readonly"></div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Email">Эл. почта</label><div class="controls span8"><div class="control-readonly">zakupki@ugmk.com</div></div></div><div class="control-group row-fluid  "><label class="control-label span4 with-colon" for="Website">Адрес сайта</label><div class="controls span8"><div class="control-readonly"></div></div></div></div></div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			 <div id="footer" class="footer">
+
+
+<div class="copyright">
+	<div class="contacts container">
+
+	</div>
+	<div class="container">
+		<a href="/" class="footer-logo"></a>
+		<div class="pull-right">
+			<a href="http://fogsoft.ru/solutions/procurement_automation/procurement_automation.aspx" target="_blank" rel=nofollow class="site-developer">Разработано на платформе iTender компании<br/>Fogsoft (ФогСофт)</a>
+		</div>
+	</div>
+</div>
+
+		    </div>
+		</div>
+<form class="hide" data-ajax-post="1" id="bd7d0b99-f2e7-4d38-8595-adc1824b83f2" method="POST"><input name="__RequestVerificationToken" type="hidden" value="GStvA9wvNvFXzBu1Dg23BD02yF552FuSIRBaIwRGltJzeAziBYDwGu06I886V1sc9PSieH51vfcKCCdQJUDwC6Zld/b0KugPsUdiNX8GzTw/fPT65RHYZwlHaFSa0maMSMHd5uKdnZsRtILkJLPTCHXf4Kl3EULE2cNZtw3n4YU=" /></form>
+
+
+<script id="fs-datagrid-status" type="text/x-jquery-tmpl">
+	Всего записей: <span class="count">${$item.common.formatNumber(totalCount, null, "Number")}</span>
+</script>
+<script id="fs-datagrid-status-and-select" type="text/x-jquery-tmpl">
+	<span class="info">Всего записей: <span class="count">${$item.common.formatNumber(totalCount, null, "Number")}</span></span>
+	<span class="info">Выделено: <span class="count">${$item.common.formatNumber(selectedCount, null, "Number")}</span></span>
+</script>
+<script id="fs-datagrid-select-limit-exceeded-message" type="text/x-jquery-tmpl">Функция &#171;Выбрать все&#187; имеет ограничение на ${limit} записей. Если возможно, уточните Ваш запрос.</script>
+<script id="fs-datagrid-tenderLotNumber" type="text/x-jquery-tmpl">
+	{{if TenderNumber}}${TenderNumber}{{/if}}{{if TenderLotNumber}}/${$item.common.formatNumber(TenderLotNumber, "0#")}{{/if}}
+</script>
+
+
+
+<script id="fs-tender-initialprice-tmpl" type="text/x-jquery-tmpl">
+	{{if InitialPrice}}
+		${$item.common.formatNumber(InitialPrice, null, "Money")}
+	{{else}}
+		Не определена
+	{{/if}}
+</script>
+		<script type="text/javascript" src="/combres.axd/siteJs/563858504/"></script>
+		<script type="text/javascript" src="/combres.axd/siteJs-ru/51365394/"></script>
+		<script type="text/javascript" src="/combres.axd/clientJs/528/"></script>
+
+
+	</body>
+</html>
